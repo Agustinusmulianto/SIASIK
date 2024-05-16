@@ -91,9 +91,55 @@ function tableDetail2() {
         });
     }
 }
+tableDetail2();
+
+function presensiForm() {
+    let open2 = document.getElementById("open-detail");
+    let close2 = document.getElementById("close-detail");
+    let presensiForm = document.getElementById("presensi-form");
+
+    if (open2) {
+        open2.addEventListener('click', function () {
+            presensiForm.style.display = 'block';
+            open2.style.display = 'none';
+            close2.style.display = 'block';
+        });
+    }
+
+    if (close2) {
+        close2.addEventListener('click', function () {
+            presensiForm.style.display = 'none';
+            close2.style.display = 'none';
+            open2.style.display = 'block';
+        });
+    }
+}
+presensiForm();
+
+function presensiForm2() {
+    let open2 = document.getElementById("open-detail-2");
+    let close2 = document.getElementById("close-detail-2");
+    let presensiForm2 = document.getElementById("presensi-form-2");
+
+    if (open2) {
+        open2.addEventListener('click', function () {
+            presensiForm2.style.display = 'block';
+            open2.style.display = 'none';
+            close2.style.display = 'block';
+        });
+    }
+
+    if (close2) {
+        close2.addEventListener('click', function () {
+            presensiForm2.style.display = 'none';
+            close2.style.display = 'none';
+            open2.style.display = 'block';
+        });
+    }
+}
 
 // Call the function to set up the event listeners
-tableDetail2();
+presensiForm2();
 
 function previewImage(event) {
     const file = event.target.files[0];
