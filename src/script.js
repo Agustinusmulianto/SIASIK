@@ -1,145 +1,15 @@
-
-function changeColor(selectElement) {
-    const selectedOption = selectElement.options[selectElement.selectedIndex];
-    const selectElementClassList = selectElement.classList;
-
-    // Remove background color classes
-    selectElementClassList.remove('bg-green-500');
-    selectElementClassList.remove('bg-red-500');
-
-    // Add background color class based on selected option
-    if (selectedOption.id === 'hadir') {
-        selectElementClassList.add('bg-green-500');
-    } else if (selectedOption.id === 'tidak-hadir') {
-        selectElementClassList.add('bg-red-500');
-    }
-}
-
-function validateForm() {
-    let mapel = document.getElementById('mapel').value;
-    let kelas = document.getElementById('kelas').value;
-    let notFound = document.getElementById("notFound");
-    let hasil = document.getElementById("hasil");
-
-    if (mapel == null || mapel === 'Mata Pelajaran' || kelas == null || kelas === 'Kelas') {
-        alert('Silakan pilih mata pelajaran dan kelas terlebih dahulu.');
-        return false;
+function toggleDetailTable(tableId) {
+    const studentDataRow = document.getElementById(tableId);
+    const icon = document.getElementById(`detail${tableId.slice(-1)}`);
+    if (studentDataRow.classList.contains('hidden')) {
+        studentDataRow.classList.remove('hidden');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />';
     } else {
-        notFound.style.display = "none";
-        hasil.style.display = "block";
-    }
-    return true;
-}
-function validateFormAkademik() {
-    let kelas = document.getElementById('kelas').value;
-    let nilaiNull = document.getElementById("nilaiNull");
-    let hasilNilai = document.getElementById("hasilNilai");
-
-    if (kelas == null || kelas === 'Kelas') {
-        alert('Silakan pilih kelas terlebih dahulu.');
-        return false;
-    } else {
-        nilaiNull.style.display = "none";
-        hasilNilai.style.display = "block";
-    }
-    return true;
-}
-
-function tableDetail() {
-    let open = document.getElementById("open-detail");
-    let close = document.getElementById("close-detail");
-    let table = document.getElementById("detail-table");
-
-    if (open) {
-        open.addEventListener('click', function () {
-            table.style.display = 'block';
-            open.style.display = 'none';
-            close.style.display = 'block';
-        });
-    }
-
-    if (close) {
-        close.addEventListener('click', function () {
-            table.style.display = 'none';
-            close.style.display = 'none';
-            open.style.display = 'block';
-        });
+        studentDataRow.classList.add('hidden');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />';
     }
 }
 
-// Call the function to set up the event listeners
-tableDetail();
-
-function tableDetail2() {
-    let open2 = document.getElementById("open-detail-2");
-    let close2 = document.getElementById("close-detail-2");
-    let table2 = document.getElementById("detail-table-2");
-
-    if (open2) {
-        open2.addEventListener('click', function () {
-            table2.style.display = 'block';
-            open2.style.display = 'none';
-            close2.style.display = 'block';
-        });
-    }
-
-    if (close2) {
-        close2.addEventListener('click', function () {
-            table2.style.display = 'none';
-            close2.style.display = 'none';
-            open2.style.display = 'block';
-        });
-    }
-}
-tableDetail2();
-
-function presensiForm() {
-    let open2 = document.getElementById("open-detail");
-    let close2 = document.getElementById("close-detail");
-    let presensiForm = document.getElementById("presensi-form");
-
-    if (open2) {
-        open2.addEventListener('click', function () {
-            presensiForm.style.display = 'block';
-            open2.style.display = 'none';
-            close2.style.display = 'block';
-        });
-    }
-
-    if (close2) {
-        close2.addEventListener('click', function () {
-            presensiForm.style.display = 'none';
-            close2.style.display = 'none';
-            open2.style.display = 'block';
-        });
-    }
-}
-presensiForm();
-
-function presensiForm2() {
-    let open2 = document.getElementById("open-detail-2");
-    let close2 = document.getElementById("close-detail-2");
-    let presensiForm2 = document.getElementById("presensi-form-2");
-
-    if (open2) {
-        open2.addEventListener('click', function () {
-            presensiForm2.style.display = 'block';
-            open2.style.display = 'none';
-            close2.style.display = 'block';
-        });
-    }
-
-    if (close2) {
-        close2.addEventListener('click', function () {
-            presensiForm2.style.display = 'none';
-            close2.style.display = 'none';
-            open2.style.display = 'block';
-        });
-    }
-}
-
-// Call the function to set up the event listeners
-presensiForm2();
 
 function previewImage(event) {
     const file = event.target.files[0];
@@ -153,4 +23,73 @@ function previewImage(event) {
         };
         reader.readAsDataURL(file);
     }
+}
+function toggleStudentData(className, tanggalId, studentDataId) {
+    const tanggal = document.getElementById(tanggalId).value;
+    if (!tanggal) {
+        alert('Tanggal harus diisi');
+        return;
+    }
+
+
+    const studentDataRow = document.getElementById(studentDataId);
+    const icon = document.getElementById(`icon${studentDataId.slice(-1)}`);
+    if (studentDataRow.classList.contains('hidden')) {
+        studentDataRow.classList.remove('hidden');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />';
+    } else {
+        studentDataRow.classList.add('hidden');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />';
+    }
+}
+
+function updateSelectColor(select) {
+    if (select.value === 'hadir') {
+        select.classList.remove('bg-red-500', 'text-white');
+        select.classList.add('bg-green-500', 'text-white');
+        // Menonaktifkan select ketika presensi 'hadir' dipilih
+        const ketSelect = select.parentElement.nextElementSibling.querySelector('select');
+        ketSelect.disabled = true;
+        ketSelect.value = ''; // Mengatur nilai keterangan menjadi kosong
+    } else if (select.value === 'tidak hadir') {
+        select.classList.remove('bg-green-500', 'text-white');
+        select.classList.add('bg-red-500', 'text-white');
+        // Mengaktifkan kembali select jika presensi selain 'hadir' dipilih
+        const ketSelect = select.parentElement.nextElementSibling.querySelector('select');
+        ketSelect.disabled = false;
+    } else {
+        select.classList.remove('bg-green-500', 'bg-red-500', 'text-white');
+        // Mengaktifkan kembali select jika presensi selain 'hadir' dipilih
+        const ketSelect = select.parentElement.nextElementSibling.querySelector('select');
+        ketSelect.disabled = false;
+    }
+}
+
+
+function submitData(studentTableId) {
+    let valid = true;
+    const studentTable = document.getElementById(studentTableId);
+    const rows = studentTable.getElementsByTagName('tr');
+
+    for (let i = 0; i < rows.length; i++) {
+        const presensi = rows[i].querySelector('select[id^="presensi"]').value;
+        const ket = rows[i].querySelector('select[id^="ket"]').value;
+        const studentName = rows[i].querySelector('td').textContent.trim();
+
+        if (!presensi) {
+            alert(`Presensi untuk ${studentName} harus diisi`);
+            event.preventDefault();
+            valid = false;
+            break;
+        }
+
+        if (presensi === 'tidak hadir' && !ket) {
+            alert(`Keterangan untuk ${studentName} harus diisi jika presensi tidak hadir`);
+            valid = false;
+            event.preventDefault();
+            break;
+        }
+
+    }
+
 }

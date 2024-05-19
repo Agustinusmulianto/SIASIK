@@ -88,7 +88,6 @@
         </div>
     </nav>
     <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
-
         <aside id="sidebar"
             class="fixed top-0 left-0 z-20 lg:flex flex-col flex-shrink-0 hidden w-64 h-full pt-16 font-normal duration-75 transition-width"
             aria-label="Sidebar">
@@ -202,12 +201,9 @@
                 </div>
             </div>
         </aside>
-
         <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90" id="sidebarBackdrop"></div>
-
         <div id="main-content" class="relative w-full h-full overflow-y-auto bg-gray-50 lg:ml-64 dark:bg-gray-900">
             <main>
-
                 <div class="px-4 pt-6 dark:bg-gray-900">
                     <!-- Breadcrumb -->
                     <div class="mb-4 col-span-full xl:mb-2">
@@ -251,235 +247,214 @@
                                 </li>
                             </ol>
                         </nav>
-                        <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">Detail Akademik</h1>
+                        <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">Detail Akademik
+                            Siswa
+                        </h1>
                     </div>
                     <!-- main Content -->
-                    <!-- head  -->
-                    <div class="bg-white px-4 py-5 w-full">
-                        <div class="flex justify-between overflow-x-auto">
-                            <table class="flex items-center gap-4 w-full table-auto">
-                                <thead class="dark:bg-gray-700">
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            Nama
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            NIS
-                                        </th>
-                                    </tr>
+                    <div class="grid grid-cols-1 xl:grid-cols-3 xl:gap-4 dark:bg-gray-900">
+                        <div class="col-span-full xl:col-auto">
+                            <div
+                                class="p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+                                <header class="text-center">
+                                    <a href="detail-siswa.html"
+                                        class="inline-flex items-center px-3 font-bold text-xl text-center underline text-bl ">
+                                        Data Siswa
+                                    </a>
+                                </header>
 
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            NISN
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            Kelas
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            Tahun Masuk
-                                        </th>
-                                    </tr>
-
-                                </thead>
-                                <tbody class=" bg-white divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            L Agustinus Mulianto
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            12201438
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            12201414
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            6
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            2020
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                                <thead class="dark:bg-gray-700">
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            Nama Ayah
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            Nama Ibu
-                                        </th>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            Nama Wali
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            Alamat
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="p-4 text-base font-medium text-left dark:text-gray-400">
-                                            Alamat Wali
-                                        </th>
-                                    </tr>
-
-                                </thead>
-                                <tbody class=" bg-white divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            L Agustinus Mulianto
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            L Agustinus Mulianto
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            L Agustinus Mulianto
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            Pontianak
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td
-                                            class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            Pontianak
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                            <div class="mt-4 flex flex-col items-center">
-                                <img src="img/yan.png" alt="Yan" width="200" height="100">
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Nilai -->
-                    <div class="flex flex-col">
-                        <div class="overflow-x-auto">
-                            <div class="inline-block min-w-full align-middle">
-                                <div class="relative overflow-x-auto shadow w-full">
-                                    <div>
-                                        <table class="mx-auto w-full">
-                                            <thead class="bg-gray-100 dark:bg-gray-700">
-                                                <tr class="">
-
-                                                    <th scope="col"
-                                                        class="p-4 text-base font-medium text-center text-gray-500 uppercase dark:text-gray-400">
-                                                        Mata Pelajaran
-                                                    </th>
-                                                    <th scope="col"
-                                                        class="p-4 text-xs font-medium text-center text-gray-500 uppercase dark:text-gray-400">
-                                                        KKM
-                                                    </th>
-                                                    <th scope="col"
-                                                        class="p-4 text-xs font-medium text-center text-gray-500 uppercase dark:text-gray-400">
-                                                        Nilai
-                                                    </th>
-                                                    <th scope="col"
-                                                        class="p-4 text-xs font-medium text-center text-gray-500 uppercase dark:text-gray-400">
-                                                        Grade
-                                                    </th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody
-                                                class=" bg-white divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
-
-                                                <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
-                                                    <td
-                                                        class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        IPA
-                                                    </td>
-                                                    <td
-                                                        class="text-center p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        75
-                                                    </td>
-                                                    <td
-                                                        class="text-center p-4 text-base font-normal text-gray-900 whitespace-nowrap dark:text-white">
-                                                        80
-                                                    </td>
-                                                    <td
-                                                        class="text-center p-4 text-base font-normal text-gray-900 whitespace-nowrap dark:text-white uppercase">
-                                                        B</td>
-                                                </tr>
-                                                <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
-                                                    <td
-                                                        class="text-left p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        Matematika
-                                                    </td>
-                                                    <td
-                                                        class="text-center p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                        75
-                                                    </td>
-                                                    <td
-                                                        class="text-center p-4 text-base font-normal text-gray-900 whitespace-nowrap dark:text-white">
-                                                        80
-                                                    </td>
-                                                    <td
-                                                        class="text-center p-4 text-base font-normal text-gray-900 whitespace-nowrap dark:text-white uppercase">
-                                                        B</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="flex justify-end my-5">
-
-                                            <a href="#"
-                                                class="flex items-center px-3 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-                                                <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                Download
-                                            </a>
+                                <div class="grid gap-4 lg:flex md:flex">
+                                    <div id="biodata-siswa" class="grid grid-cols-2 w-full gap-2">
+                                        <div class="col-span-6 sm:col-span-3 ">
+                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                Nama Siswa
+                                            </h1>
+                                            <p
+                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                L Agustinus Mulianto
+                                            </p>
                                         </div>
+
+                                        <div class="col-span-6 sm:col-span-3">
+                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                NIS
+                                            </h1>
+                                            <p
+                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                12201438
+                                            </p>
+                                        </div>
+                                        <div class="col-span-6 sm:col-span-3">
+                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                NISN
+                                            </h1>
+                                            <p
+                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                12201414
+                                            </p>
+                                        </div>
+                                        <div class="col-span-6 sm:col-span-3">
+                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                Kelas
+                                            </h1>
+                                            <p
+                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                6
+                                            </p>
+                                        </div>
+                                        <div class="col-span-6 sm:col-span-3">
+                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                Semester
+                                            </h1>
+                                            <p
+                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                Genap
+                                            </p>
+                                        </div>
+
 
                                     </div>
 
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-span-2">
+                            <div class="w-full">
+                                <div
+                                    class="p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+                                    <header class="flex justify-between items-center mb-4">
+                                        <h3 class="text-xl font-semibold dark:text-white">Nilai Siswa</h3>
+                                        <a href="#"
+                                            class="flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                            <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            Download
+                                        </a>
+                                    </header>
+                                    <div>
+                                        <table class=" w-full bg-white mb-8">
+                                            <thead class="bg-gray-800 text-white">
+                                                <tr>
+                                                    <th class="w-1/3 py-2">Mata Pelajaran</th>
+                                                    <th class="w-1/12 py-2">UAS</th>
+                                                    <th class="w-1/12 py-2">UTS</th>
+                                                    <th class="w-1/12 py-2">TUGAS</th>
+                                                    <th class="w-1/12 py-2">PR</th>
+                                                    <th class="w-1/6 py-2">Presensi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="classTable">
+                                                <!-- Kelas 1A -->
+                                                <tr class="text-center">
+                                                    <td class="border px-4 py-2">IPA</td>
+                                                    <td class="border px-4 py-2">90</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td class="border px-4 py-2">IPS</td>
+                                                    <td class="border px-4 py-2">90</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td class="border px-4 py-2">Matematika</td>
+                                                    <td class="border px-4 py-2">90</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td class="border px-4 py-2">Agama</td>
+                                                    <td class="border px-4 py-2">90</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+                                                    <td class="border px-4 py-2">80</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="w-full">
+                                <div
+                                    class="p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+                                    <header class="flex justify-between items-center mb-4">
+                                        <h3 class="text-xl font-semibold dark:text-white">Presensi Siswa</h3>
+                                        <a href="#"
+                                            class="flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                            <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            Download
+                                        </a>
+                                    </header>
+                                    <div>
+                                        <table class=" w-full bg-white mb-8">
+                                            <thead class="bg-gray-800 text-white">
+                                                <tr>
+                                                    <th class="w-1/3 py-2">Tanggal</th>
+                                                    <th class="w-1/3 py-2">Presensi</th>
+                                                    <th class="w-1/3 py-2">Keterangan</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody id="classTable">
+                                                <!-- Kelas 1A -->
+                                                <tr class="text-center">
+                                                    <td class="border px-4 py-2">2024-05-19</td>
+                                                    <td class="border px-4 py-2">Hadir</td>
+                                                    <td class="border px-4 py-2"></td>
+
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td class="border px-4 py-2">2024-05-20</td>
+                                                    <td class="border px-4 py-2">Tidak Hadir</td>
+                                                    <td class="border px-4 py-2">Tanpa Keterangan</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+
+
+                                    </div>
 
                                 </div>
 
                             </div>
                         </div>
-                    </div>
 
+
+                    </div>
 
                 </div>
             </main>
