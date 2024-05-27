@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Akademik Siswa</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>SIAKSI</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://flowbite-admin-dashboard.vercel.app//app.css">
 </head>
 
 <body class="bg-gray-100">
 
     <!-- Header -->
-    <header class="bg-cyan-300 text-white py-4">
+    <header class="bg-sky-300 text-black py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Sistem Akademik Siswa</h1>
+            <a href="landing-page.html" class="text-2xl font-bold">Sistem Akademik Siswa</a>
             <nav>
                 <ul class="flex space-x-4">
-                    <li><a href="#home" class="hover:underline">Home</a></li>
-                    <li><a href="#features" class="hover:underline">Fitur</a></li>
-                    <li><a href="#contact" class="hover:underline">Kontak</a></li>
-                    <li><a href="#login" class="hover:underline">Login</a></li>
+                    <li><a href="#home" class="hover:font-bold hover:text-white">Home</a></li>
+                    <li><a href="#features" class="hover:font-bold hover:text-white">Fitur</a></li>
+                    <li><a href="#contact" class="hover:font-bold hover:text-white">Kontak</a></li>
+                    <li><a href="login.html" class="hover:font-bold hover:text-white">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,12 +33,13 @@
         style="background-image: url('img/student_campus.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative">
-            <div class="container mx-auto text-center text-white relative z-10">
+            <article class="container mx-auto text-center text-white relative z-10">
                 <h2 class="text-4xl font-bold mb-4">Selamat Datang di Sistem Akademik Siswa</h2>
                 <p class="text-xl mb-10">Memonitor perkembangan akademik anak Anda dengan mudah dan cepat</p>
-                <a href="#login" class="bg-blue-600 mt-10 text-white py-2 px-4 rounded hover:bg-blue-700">Login
+                <a href="login.html"
+                    class="bg-sky-300 mt-10 text-black py-2 px-4 rounded hover:bg-sky-400 hover:text-white">Login
                     Sekarang</a>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -46,43 +49,46 @@
     <section id="features" class="py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-10">Fitur Utama</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded shadow">
+            <div class="grid grid-cols-3 md:grid-cols-3 gap-8">
+                <article class="bg-white p-6 rounded shadow">
                     <h3 class="text-2xl font-bold mb-4">Monitoring Nilai</h3>
                     <p>Orang tua dapat melihat nilai UAS, UTS, PR, dan Tugas Harian anak mereka secara real-time.</p>
-                </div>
-                <div class="bg-white p-6 rounded shadow">
+                </article>
+                <article class="bg-white p-6 rounded shadow">
                     <h3 class="text-2xl font-bold mb-4">Presensi Siswa</h3>
                     <p>Memantau kehadiran anak di sekolah setiap hari.</p>
-                </div>
-                <div class="bg-white p-6 rounded shadow">
+                </article>
+                <article class="bg-white p-6 rounded shadow">
                     <h3 class="text-2xl font-bold mb-4">Komunikasi dengan Guru</h3>
                     <p>Fasilitas komunikasi langsung dengan guru untuk memantau perkembangan akademik anak.</p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="bg-white py-20 bg-cover" style="background-image: url('img/wave.svg');">
-        <div class="container mx-auto text-center">
+        <article class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-10">Kontak Kami</h2>
             <p>Untuk informasi lebih lanjut, Anda dapat menghubungi kami melalui email atau nomor telepon berikut:</p>
             <p class="mt-4">Email: info@akademiksiswa.com</p>
             <p>Telepon: 021-12345678</p>
-        </div>
+        </article>
     </section>
 
 
 
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white py-4">
+    <footer class="bg-sky-300 text-black py-4">
         <div class="container mx-auto text-center">
             &copy; 2024 Sistem Akademik Siswa. All rights reserved.
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://flowbite-admin-dashboard.vercel.app//app.bundle.js"></script>
+    <script src="src/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/datepicker.min.js"></script>
 </body>
 
 </html>

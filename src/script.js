@@ -24,13 +24,7 @@ function previewImage(event) {
         reader.readAsDataURL(file);
     }
 }
-function toggleStudentData(className, tanggalId, studentDataId) {
-    const tanggal = document.getElementById(tanggalId).value;
-    if (!tanggal) {
-        alert('Tanggal harus diisi');
-        return;
-    }
-
+function toggleStudentData(className, studentDataId) {
 
     const studentDataRow = document.getElementById(studentDataId);
     const icon = document.getElementById(`icon${studentDataId.slice(-1)}`);
@@ -92,4 +86,80 @@ function submitData(studentTableId) {
 
     }
 
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const selectElements = document.querySelectorAll('select');
+    const submitButton = document.querySelector('button[onclick="submitButtonInputGuru()"]');
+
+    function updateOptions() {
+        // Reset disabled state for all options
+        selectElements.forEach(select => {
+            select.querySelectorAll('option').forEach(option => {
+                option.disabled = false;
+            });
+        });
+
+        // Disable selected options in other selects
+        selectElements.forEach(select => {
+            if (select.value) {
+                selectElements.forEach(otherSelect => {
+                    if (otherSelect !== select) {
+                        const optionToDisable = otherSelect.querySelector(`option[value="${select.value}"]`);
+                        if (optionToDisable) {
+                            optionToDisable.disabled = true;
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    selectElements.forEach(select => {
+        select.addEventListener('change', updateOptions);
+    });
+
+    window.submitButtonInputGuru = function () {
+        let allSelected = true;
+        selectElements.forEach(select => {
+            if (!select.value) {
+                allSelected = false;
+            }
+        });
+
+        if (!allSelected) {
+            alert('Semua Data Kelas wajib dipilih!');
+            return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+    };
+
+    // Initial call to update options based on pre-selected values
+    updateOptions();
+});
+
+function toggleInputData(className, inputDataId) {
+    const studentDataRow = document.getElementById(inputDataId);
+    const icon = document.getElementById(`icon-${inputDataId}`);
+
+    if (studentDataRow.classList.contains('hidden')) {
+        studentDataRow.classList.remove('hidden');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />';
+    } else {
+        studentDataRow.classList.add('hidden');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />';
+    }
+}
+
+function submitData(inputDataId) {
+    // Implementasi untuk submit data jika diperlukan
+    alert(`Data dari ${inputDataId} di kirim`);
+}
+
+function addInput(inputDataId) {
+    const studentTable = document.getElementById(inputDataId);
+    const newRow = document.createElement('tr');
+    newRow.innerHTML = `<td class="border px-4 py-2"><input type="text" name="mata_pelajaran[]" class="w-full p-2 border rounded" placeholder="Masukkan Mata Pelajaran" required></td>`;
+    studentTable.appendChild(newRow);
 }

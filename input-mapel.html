@@ -88,6 +88,7 @@
         </div>
     </nav>
     <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
+
         <aside id="sidebar"
             class="fixed top-0 left-0 z-20 lg:flex flex-col flex-shrink-0 hidden w-64 h-full pt-16 font-normal duration-75 transition-width"
             aria-label="Sidebar">
@@ -98,6 +99,28 @@
                         class="flex-1 px-3 space-y-1 bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
                         <ul class="pb-2 space-y-2">
                             <li>
+                                <a href="super-user.html"
+                                    class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
+                                    <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                        <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                                    </svg>
+                                    <span class="ms-3">Super User</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="input-mapel.html"
+                                    class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
+                                    <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                        <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                                    </svg>
+                                    <span class="ms-3">Input Mapel</span>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="index.html"
                                     class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
                                     <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
@@ -105,7 +128,7 @@
                                         <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                                         <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                                     </svg>
-                                    <span class="ml-3" sidebar-toggle-item>Dashboard</span>
+                                    <span class="ms-3">Dashboard</span>
                                 </a>
                             </li>
                             <li>
@@ -201,9 +224,12 @@
                 </div>
             </div>
         </aside>
+
         <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90" id="sidebarBackdrop"></div>
+
         <div id="main-content" class="relative w-full h-full overflow-y-auto bg-gray-50 lg:ml-64 dark:bg-gray-900">
             <main>
+
                 <div class="px-4 pt-6 dark:bg-gray-900">
                     <!-- Breadcrumb -->
                     <div class="mb-4 col-span-full xl:mb-2">
@@ -218,244 +244,82 @@
                                                 d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
                                             </path>
                                         </svg>
-                                        Home
+                                        Super User
                                     </a>
-                                </li>
-                                <li>
-                                    <div class="flex items-center">
-                                        <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <a href="#"
-                                            class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white">Users</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="flex items-center">
-                                        <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="ml-1 text-gray-400 md:ml-2 dark:text-gray-500"
-                                            aria-current="page">Settings</span>
-                                    </div>
                                 </li>
                             </ol>
                         </nav>
-                        <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">Detail Akademik
-                            Siswa
-                        </h1>
+                        <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">Super User</h1>
                     </div>
                     <!-- main Content -->
-                    <div class="grid grid-cols-1 xl:grid-cols-3 xl:gap-4 dark:bg-gray-900">
-                        <div class="col-span-full xl:col-auto">
-                            <div
-                                class="p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
-                                <header class="text-center">
-                                    <a href="detail-siswa.html"
-                                        class="inline-flex items-center px-3 font-bold text-xl text-center underline text-bl ">
-                                        Data Siswa
-                                    </a>
-                                </header>
-
-                                <div class="grid gap-4 lg:flex md:flex">
-                                    <div id="biodata-siswa" class="grid grid-cols-2 w-full gap-2">
-                                        <div class="col-span-6 sm:col-span-3 ">
-                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                Nama Siswa
-                                            </h1>
-                                            <p
-                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                                L Agustinus Mulianto
-                                            </p>
-                                        </div>
-
-                                        <div class="col-span-6 sm:col-span-3">
-                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                NIS
-                                            </h1>
-                                            <p
-                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                                12201438
-                                            </p>
-                                        </div>
-                                        <div class="col-span-6 sm:col-span-3">
-                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                NISN
-                                            </h1>
-                                            <p
-                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                                12201414
-                                            </p>
-                                        </div>
-                                        <div class="col-span-6 sm:col-span-3">
-                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                Kelas
-                                            </h1>
-                                            <p
-                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                                6
-                                            </p>
-                                        </div>
-                                        <div class="col-span-6 sm:col-span-3">
-                                            <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                Semester
-                                            </h1>
-                                            <p
-                                                class="shadow-sm bg-gray-50 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                                Genap
-                                            </p>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-
-
-                            </div>
+                    <section class="p-4 bg-white border-gray-200 rounded-lg  mt-5">
+                        <div class="text-center my-5">
+                            <h1 class="text-xl font-semibold">Input Mata Pelajaran</h1>
                         </div>
+                        <form action="" method="post" class="w-full">
+                            <table class="w-full mx-auto bg-white">
+                                <thead class="bg-red-100 text-black">
+                                    <tr>
+                                        <th class="w-1/10 py-2">No</th>
+                                        <th class="w-1/4 py-2">Kelas</th>
+                                        <th class="w-1/4 py-2">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="classTable">
+                                    <!-- Kelas 1A -->
+                                    <tr class="text-center">
+                                        <td class="border px-4 py-2">1</td>
+                                        <td class="border px-4 py-2">Kelas 1A</td>
+                                        <td class="border px-4 py-2">
+                                            <button type="button" title="Detail"
+                                                class="text-blue-500 hover:text-blue-700"
+                                                onclick="toggleInputData('Kelas 1A', 'inputData1')">
+                                                <svg id="icon-inputData1" xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M19 9l-7 7-7-7" />
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hidden" id="inputData1">
+                                        <td colspan="3">
+                                            <div class="mt-4 mb-8">
+                                                <h2 class="text-base font-bold mb-4 text-center">Kelas 1A</h2>
+                                                <table class="w-full bg-white">
+                                                    <thead class="bg-gray-800 text-white">
+                                                        <tr>
+                                                            <th class="w-1/3 py-2">Nama Mata Pelajaran</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="inputDataTable1">
+                                                        <tr>
+                                                            <td class="border px-4 py-2">
+                                                                <input type="text" name="mata_pelajaran[]"
+                                                                    class="w-full p-2 border rounded"
+                                                                    placeholder="Masukkan Mata Pelajaran" required>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="flex justify-end gap-4 mt-4">
+                                                    <button type="button"
+                                                        class="bg-sky-300  text-black font-bold py-2 px-4 rounded"
+                                                        onclick="addInput('inputDataTable1')">Tambah</button>
+                                                    <button type="submit"
+                                                        class="bg-sky-300 text-black font-bold py-2 px-4 rounded"
+                                                        onclick="submitData('inputDataTable1')">Submit
+                                                        Data</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                        <div class="col-span-2">
-                            <div class="w-full">
-                                <div
-                                    class="p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
-                                    <header class="flex justify-between items-center mb-4">
-                                        <h3 class="text-xl font-semibold dark:text-white">Nilai Siswa</h3>
-                                        <a href="#"
-                                            class="flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                                            <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                            Download
-                                        </a>
-                                    </header>
-                                    <div>
-                                        <table class=" w-full bg-white mb-8">
-                                            <thead class="bg-gray-800 text-white">
-                                                <tr>
-                                                    <th class="w-1/3 py-2">Mata Pelajaran</th>
-                                                    <th class="w-1/12 py-2">UAS</th>
-                                                    <th class="w-1/12 py-2">UTS</th>
-                                                    <th class="w-1/12 py-2">TUGAS</th>
-                                                    <th class="w-1/12 py-2">PR</th>
-                                                    <th class="w-1/6 py-2">Presensi</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="classTable">
-                                                <!-- Kelas 1A -->
-                                                <tr class="text-center">
-                                                    <td class="border px-4 py-2">IPA</td>
-                                                    <td class="border px-4 py-2">90</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-
-                                                </tr>
-                                                <tr class="text-center">
-                                                    <td class="border px-4 py-2">IPS</td>
-                                                    <td class="border px-4 py-2">90</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-
-                                                </tr>
-                                                <tr class="text-center">
-                                                    <td class="border px-4 py-2">Matematika</td>
-                                                    <td class="border px-4 py-2">90</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-
-                                                </tr>
-                                                <tr class="text-center">
-                                                    <td class="border px-4 py-2">Agama</td>
-                                                    <td class="border px-4 py-2">90</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-                                                    <td class="border px-4 py-2">80</td>
-
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-
-
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="w-full">
-                                <div
-                                    class="p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
-                                    <header class="flex justify-between items-center mb-4">
-                                        <h3 class="text-xl font-semibold dark:text-white">Presensi Siswa</h3>
-                                        <a href="#"
-                                            class="flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                                            <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                            Download
-                                        </a>
-                                    </header>
-                                    <div>
-                                        <table class=" w-full bg-white mb-8">
-                                            <thead class="bg-gray-800 text-white">
-                                                <tr>
-                                                    <th class="w-1/3 py-2">Tanggal</th>
-                                                    <th class="w-1/3 py-2">Presensi</th>
-                                                    <th class="w-1/3 py-2">Keterangan</th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody id="classTable">
-                                                <!-- Kelas 1A -->
-                                                <tr class="text-center">
-                                                    <td class="border px-4 py-2">2024-05-19</td>
-                                                    <td class="border px-4 py-2">Hadir</td>
-                                                    <td class="border px-4 py-2"></td>
-
-                                                </tr>
-                                                <tr class="text-center">
-                                                    <td class="border px-4 py-2">2024-05-20</td>
-                                                    <td class="border px-4 py-2">Tidak Hadir</td>
-                                                    <td class="border px-4 py-2">Tanpa Keterangan</td>
-
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-
-
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
+                        </form>
+                    </section>
                 </div>
             </main>
             <footer>
@@ -487,6 +351,7 @@
         </div>
 
     </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
